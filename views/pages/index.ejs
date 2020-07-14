@@ -1,0 +1,41 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include ../partials/head %>
+  </head>
+  <body class="container">
+    <div class="title">
+      <p>statics of Covid-19</p>
+    </div>
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Population</th>
+          <th scope="col">ConfirmedCases</th>
+          <th scope="col">Deaths</th>
+          <th scope="col">Recovered</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% var i=1 %> <% table.forEach(function(row){ %>
+        <tr>
+          <th scope="row"><%= i++ %></th>
+          <td><%= row.name %></td>
+          <td><%= row.population %></td>
+          <td><%= row.confirmedCases %></td>
+          <td><%= row.deaths %></td>
+          <td><%= row.recovered %></td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+
+    <footer>
+      <% include ../partials/footer %>
+    </footer>
+  </body>
+</html>

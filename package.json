@@ -1,0 +1,16 @@
+{
+  "name": "eng-hw4",
+  "version": "1.0.0",
+  "description": "covid-19",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "ejs": "^1.0.0",
+    "express": "^4.6.1"
+  }
+}

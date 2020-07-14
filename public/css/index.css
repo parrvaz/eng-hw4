@@ -1,0 +1,27 @@
+body {
+  padding-top: 50px;
+  background-image: url("./covid-1.png");
+}
+.title {
+  height: 150px;
+  text-align: center;
+}
+.title > p {
+  margin-top: 10px;
+  font-size: 70px;
+  color: aliceblue;
+}
+
+.table-striped {
+  color: white;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #1c302e;
+}
+
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+  background-color: #2f453c;
+}
